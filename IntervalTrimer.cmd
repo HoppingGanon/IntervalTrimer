@@ -1,1 +1,1 @@
-powershell.exe -ExecutionPolicy RemoteSigned %~dp0src\show.ps1
+powershell.exe -WindowStyle Hidden -ExecutionPolicy RemoteSigned %~dp0src\show.ps1
