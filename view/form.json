@@ -1,0 +1,87 @@
+{
+    "Version": "0.3",
+    "Title": "IntervalTrimer",
+    "TitleBar": "IntervalTrimer",
+    "Width": 0,
+    "Height": 300,
+    "StartY": 8,
+    "PaddingX": 2,
+    "PaddingY": 2,
+    "Components": [
+        {
+            "Type": "Title",
+            "Label": "IntervalTrimer"
+        },
+        {
+            "Id": "blank",
+            "Type": "Blank",
+            "Height": 10
+        },
+        {
+            "Id": "Path",
+            "Type": "OpenFile",
+            "Label": "元ファイル",
+            "Default": "",
+            "DandD": true,
+            "Required": true,
+            "Return": true
+        },
+        {
+            "Id": "Begin",
+            "Type": "Number",
+            "Label": "開始(秒)",
+            "Default": "0",
+            "Required": false,
+            "Return": true
+        },
+        {
+            "Id": "Span",
+            "Type": "Number",
+            "Label": "間隔(秒)",
+            "Default": "1",
+            "Required": false,
+            "Return": true
+        },
+        {
+            "Id": "OutputPath",
+            "Type": "SaveFolder",
+            "Label": "出力先",
+            "Default": "",
+            "Required": true,
+            "Return": true
+        },
+        {
+            "Id": "Bitrate",
+            "Type": "List",
+            "Label": "ビットレート",
+            "Default": "160k",
+            "Items": [
+                "320k",
+                "256k",
+                "192k",
+                "160k",
+                "128k",
+                "80k",
+                "64k"
+            ],
+            "Return": true
+        },
+        {
+            "Id": "blank",
+            "Type": "Blank",
+            "Height": 30
+        },
+        {
+            "Id": "button1",
+            "Type": "ButtonCmd",
+            "Label": "変換",
+            "Validation": true,
+            "Close":"None",
+            "Target": "src\\convert.cmd"
+        },
+        {
+            "Type": "ButtonCancel",
+            "Label": "終了"
+        }
+    ]
+}

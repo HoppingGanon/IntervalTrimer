@@ -1,0 +1,1 @@
+powershell.exe -ExecutionPolicy RemoteSigned %~dp0src\show.ps1
